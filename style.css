@@ -4,6 +4,7 @@
     --blue: hsl(248, 32%, 49%);
     --dark-blue: hsl(249, 10%, 26%);
     --grayish-blue: hsl(246, 25%, 77%);
+    --white: hsl(0, 100%, 100%)
 }
 
 * {
@@ -18,20 +19,128 @@ a {
 body {
     width: 100vw;
     height: auto;
-    font: 16px 'Poppins', sans-serif;
+    font: 16px'Poppins', sans-serif;
     background: url(/images/bg-intro-mobile.png) var(--red);
+    box-sizing: border-box;
 }
+
+/*Mobile first - 375px*/
 
 main {
     width: 100vw;
     height: auto;
     margin: 0 auto;
     text-align: center;
-    color: white;
+    color: var(--white);
+    margin-top: 5rem;
+}
+
+.description__section {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.description__title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 140%;
+}
+
+.description__paragraph {
+    font-size: 0.95rem;
+    font-weight: 400;
+    margin: 1rem 0 2.5rem 0;
+}
+
+.form__section {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+}
+
+button, input {
+    font-family: 'poppins';
+}
+
+.form__button {
+    width: 100%;
+    height: 4.5rem;
+    background: var(--blue);
+    color: var(--white);
+    font-size: 0.9rem;
+    font-weight: 400;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 6px 1px hsla(249, 10%, 26%, 0.25);
+    padding: 0 4rem;
+    line-height: 150%;
+    margin-bottom: 1rem;
+}
+
+.form__button span {
+    font-weight: 700;
+}
+
+.form__box {
+    width: 100%;
+    height: 370px;
+    max-height: 400px;
+    background-color: var(--white);
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 7px 1px hsla(249, 10%, 26%, 0.25);
+}
+
+input {
+    width: 80%;
+    height: 2.7rem;
+    border: 1px solid var(--grayish-blue);
+    border-radius: 5px;
+    color: var(--dark-blue);
+    font-weight: 600;
+    font-size: 0.7rem;
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+}
+
+input:first-of-type {
+    margin-top: 1rem;
+}
+
+.form__box-button {
+    width: 85%;
+    height: 2.7rem;
+    border: none;
+    border-radius: 5px;
+    color: var(--white);
+    background: var(--green);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+    box-shadow: inset 0 -3px 1px hsla(249, 10%, 26%, 0.25);
+}
+
+.form__footer-msg {
+    width: 80%;
+    height: auto;
+    font-size: 0.7rem;
+    color: var(--grayish-blue);
+    margin: 0.5rem auto 1rem auto;
+}
+
+.form__footer-msg a {
+    color: var(--red);
+    font-weight: 600;
 }
 
 
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    margin-top: 1rem;
+}
 
-
-.attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
