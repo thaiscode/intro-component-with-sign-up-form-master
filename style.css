@@ -1,8 +1,10 @@
 :root {
     --red: hsl(0, 100%, 74%); 
     --green: hsl(154, 59%, 51%);
+    --green-hover: hsla(154, 59%, 51%, 0.692);
     --blue: hsl(248, 32%, 49%);
     --dark-blue: hsl(249, 10%, 26%);
+    --shadow: hsla(249, 10%, 26%, 0.25);
     --grayish-blue: hsl(246, 25%, 77%);
     --white: hsl(0, 100%, 100%)
 }
@@ -72,7 +74,7 @@ button, input {
     font-weight: 400;
     border: none;
     border-radius: 10px;
-    box-shadow: 0 6px 1px hsla(249, 10%, 26%, 0.25);
+    box-shadow: 0 6px 1px var(--shadow);
     padding: 0 4rem;
     line-height: 150%;
     margin-bottom: 1rem;
@@ -89,7 +91,7 @@ button, input {
     background-color: var(--white);
     margin: 0 auto;
     border-radius: 10px;
-    box-shadow: 0 7px 1px hsla(249, 10%, 26%, 0.25);
+    box-shadow: 0 7px 1px var(--shadow);
 }
 
 input {
@@ -118,7 +120,7 @@ input:first-of-type {
     text-transform: uppercase;
     letter-spacing: 1px;
     font-weight: 500;
-    box-shadow: inset 0 -3px 1px hsla(249, 10%, 26%, 0.25);
+    box-shadow: inset 0 -3px 1px var(--shadow);
 }
 
 .form__footer-msg {
@@ -136,11 +138,166 @@ input:first-of-type {
 
 
 .attribution { 
-    font-size: 11px; 
+    font-size: 0.7rem; 
     text-align: center; 
     margin-top: 1rem;
+    color: var(--white);
 }
 
 .attribution a { 
     color: hsl(228, 45%, 44%); 
+}
+
+/*Desktop*/
+
+@media screen and (min-width: 1024px){
+    main {
+        display: flex;
+    }
+
+    .description__section {
+        width: 45%;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+    }
+    
+    .description__title {
+        width: 90%;
+        font-size: 2rem;
+        line-height: 130%;
+    }
+    
+    .description__paragraph {
+        width: 90%;
+        font-size: 0.8rem;
+    }
+
+    .form__section {
+        width: 45%;
+    }
+
+    .form__button {
+        width: 95%;
+        height: 3rem;
+        font-size: 0.8rem;
+    }
+
+    .form__box {
+        width: 95%;
+        max-height: 500px;
+    }
+
+    input {
+        padding-left: 1.5rem;
+    }
+    
+    input:first-of-type {
+        margin-top: 2rem;
+    }
+
+    .form__box-button {
+        width: 86%;
+    }
+
+    .form__box-button:hover {
+        background: var(--green-hover);
+        cursor: pointer;
+    }
+    
+    .form__footer-msg {
+        font-size: 0.5rem;
+        margin: 0.5rem auto 1rem auto;
+    }
+
+    .attribution { 
+        font-size: 1rem; 
+    }
+}
+
+@media screen and (min-width: 1440px){    
+    .description__title {
+        width: 80%;
+        font-size: 2.5rem;
+    }
+    
+    .description__paragraph {
+        width: 80%;
+        font-size: 1rem;
+    }
+
+    .form__button {
+        width: 85%;
+        height: 4rem;
+        font-size: 0.9rem;
+    }
+
+    .form__box {
+        width: 85%;
+        height: 440px;
+    }
+
+    input {
+        height: 3rem;
+        font-size: 0.9rem;
+        padding-left: 2rem;
+        margin-bottom: 1.2rem;
+    }
+    
+    input:first-of-type {
+        margin-top: 3rem;
+    }
+
+    .form__box-button {
+        width: 85%;
+        height: 3rem;
+        font-size: 1rem;
+    }
+    
+    .form__footer-msg {
+        font-size: 0.7rem;
+    }
+}
+
+@media screen and (min-width: 1920px){
+    .description__title {
+        font-size: 3.5rem;
+    }
+    
+    .description__paragraph {
+        font-size: 1.2rem;
+    }
+
+    .form__button {
+        width: 80%;
+        height: 5rem;
+        font-size: 1rem;
+    }
+
+    .form__box {
+        width: 80%;
+        height: 500px;
+    }
+
+    input {
+        height: 3.5rem;
+        font-size: 1rem;
+        padding-left: 2rem;
+        margin-bottom: 1.2rem;
+    }
+    
+    input:first-of-type {
+        margin-top: 3.5rem;
+    }
+
+    .form__box-button {
+        height: 3.5rem;
+        font-size: 1.2rem;
+    }
+    
+    .form__footer-msg {
+        font-size: 0.9rem;
+    }
 }
