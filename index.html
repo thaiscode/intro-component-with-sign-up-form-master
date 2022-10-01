@@ -30,24 +30,25 @@
 
       <form class="form__box">
         <label for=""></label>
-        <input type="text" name="" id="form__name" placeholder="First Name" required>
+        <input type="text" name="First Name" id="form__name" placeholder="First Name" required>
 
-        <div class="form__box--error"></div>
-
-        <label for=""></label>
-        <input type="text" name="" id="form__last-name" placeholder="Last Name" required>
-
-        <div class="form__box--error"></div>
+        <div class="form__box--error name__box--error"></div>
 
         <label for=""></label>
-        <input type="email" name="" id="form__email" placeholder="Email Address" pattern="^([0-9a-zA-Z]+([_.-]?[0-9a-zA-Z]+)*@[0-9a-zA-Z]+[0-9,a-z,A-Z,.,-]*(.){1}[a-zA-Z]{2,4})+$" required>
+        <input type="text" name="Last Name" id="form__last-name" placeholder="Last Name" required>
 
-        <div class="form__box--error"></div>
+        <div class="form__box--error lastName__box--error"></div>
 
         <label for=""></label>
-        <input type="password" name="" id="form__password" placeholder="Password" required>
+        <input type="email" name="Email" id="form__email" placeholder="Email Address" pattern="^([0-9a-zA-Z]+([_.-]?[0-9a-zA-Z]+)*@[0-9a-zA-Z]+[0-9,a-z,A-Z,.,-]*(.){1}[a-zA-Z]{2,4})+$"
+        title="Looks like this is not an email" required>
+
+        <div class="form__box--error email__box--error"></div>
+
+        <label for=""></label>
+        <input type="password" name="Password" id="form__password" placeholder="Password" required>
         
-        <div class="form__box--error"></div>
+        <div class="form__box--error password__box--error"></div>
         
         <button class="form__box-button">Claim your free trial
         </button>
