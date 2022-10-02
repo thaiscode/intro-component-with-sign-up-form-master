@@ -12,7 +12,7 @@ submitButton.addEventListener('click', validation)
 
 
 function validation() {
-    /*Input's*/
+    /*Input*/
     let name = document.querySelector('#form__name')
     let lastName = document.querySelector('#form__last-name')
     let email = document.querySelector('#form__email')
