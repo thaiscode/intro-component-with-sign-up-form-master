@@ -27,7 +27,7 @@ body {
     width: 100vw;
     height: auto;
     font: 16px'Poppins', sans-serif;
-    background: url(/images/bg-intro-mobile.png) var(--red);
+    background: url(./images/bg-intro-mobile.png) var(--red);
     box-sizing: border-box;
 }
 
@@ -167,6 +167,9 @@ input:first-of-type {
 /*Desktop*/
 
 @media screen and (min-width: 1024px){
+    body {
+        background: url(./images/bg-intro-desktop.png);
+    }
     main {
         display: flex;
     }
