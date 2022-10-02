@@ -168,8 +168,9 @@ input:first-of-type {
 
 @media screen and (min-width: 1024px){
     body {
-        background: url(./images/bg-intro-desktop.png);
+        background: url(./images/bg-intro-desktop.png) var(--red);
     }
+    
     main {
         display: flex;
     }
